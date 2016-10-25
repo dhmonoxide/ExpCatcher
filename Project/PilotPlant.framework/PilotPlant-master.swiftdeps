@@ -1,0 +1,5 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "fef2bbd8f2bf5d5bba13f4e11e3dfbd3"
+build_time: [516955682, 244685000]
+inputs:
+  "/Users/lingostar/Documents/PilotPlantWS/PilotPlant/PilotPlant/UIViewController+Navigation.swift": !dirty [516942401, 0]
