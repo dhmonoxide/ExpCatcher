@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A33B2E31DC82597000A61FF /* ExpNowClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A33B2E21DC82597000A61FF /* ExpNowClass.swift */; };
+		1A33B2E71DC830A5000A61FF /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A33B2E61DC830A5000A61FF /* MainTableViewController.swift */; };
 		6E03114A1D0A7D0B008F221A /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0311481D0A7D0B008F221A /* UIViewController+Navigation.swift */; };
 		6E7D4A4A1D0AA4640081491E /* UIViewController+Navigation.swift in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0311481D0A7D0B008F221A /* UIViewController+Navigation.swift */; };
 		6E7D4A4B1D0AA4640081491E /* PilotPlant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0311491D0A7D0B008F221A /* PilotPlant.framework */; };
@@ -53,6 +55,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A33B2E21DC82597000A61FF /* ExpNowClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpNowClass.swift; sourceTree = "<group>"; };
+		1A33B2E61DC830A5000A61FF /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		6E0311481D0A7D0B008F221A /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Navigation.swift"; path = "../UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 		6E0311491D0A7D0B008F221A /* PilotPlant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PilotPlant.framework; path = ../PilotPlant.framework; sourceTree = "<group>"; };
 		7C39EF871CEC540700F6E738 /* ExpCatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpCatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +133,8 @@
 				7C39EF911CEC540800F6E738 /* Assets.xcassets */,
 				7C39EF931CEC540800F6E738 /* LaunchScreen.storyboard */,
 				7C39EF961CEC540800F6E738 /* Info.plist */,
+				1A33B2E21DC82597000A61FF /* ExpNowClass.swift */,
+				1A33B2E61DC830A5000A61FF /* MainTableViewController.swift */,
 			);
 			path = ExpCatcher;
 			sourceTree = "<group>";
@@ -220,14 +226,17 @@
 				TargetAttributes = {
 					7C39EF861CEC540700F6E738 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = EWGMUWJ9BK;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 					};
 					7C39EF9A1CEC540800F6E738 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 7C39EF861CEC540700F6E738;
 					};
 					7C39EFA51CEC540800F6E738 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 7C39EF861CEC540700F6E738;
 					};
 				};
@@ -284,9 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A33B2E31DC82597000A61FF /* ExpNowClass.swift in Sources */,
 				6E03114A1D0A7D0B008F221A /* UIViewController+Navigation.swift in Sources */,
 				7C39EF8D1CEC540800F6E738 /* ViewController.swift in Sources */,
 				7C39EF8B1CEC540700F6E738 /* AppDelegate.swift in Sources */,
+				1A33B2E71DC830A5000A61FF /* MainTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +443,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -443,6 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.snu.itct.ExpCatcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -452,6 +465,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -463,6 +477,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.snu.itct.ExpCatcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -474,6 +489,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.snu.itct.ExpCatcherTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExpCatcher.app/ExpCatcher";
 			};
 			name = Debug;
@@ -486,6 +502,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.snu.itct.ExpCatcherTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExpCatcher.app/ExpCatcher";
 			};
 			name = Release;
@@ -498,6 +515,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.snu.itct.ExpCatcherUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = ExpCatcher;
 			};
 			name = Debug;
@@ -510,6 +528,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.snu.itct.ExpCatcherUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = ExpCatcher;
 			};
 			name = Release;
