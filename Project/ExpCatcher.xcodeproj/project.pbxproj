@@ -10,10 +10,6 @@
 		1A33B2E31DC82597000A61FF /* ExpNowClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A33B2E21DC82597000A61FF /* ExpNowClass.swift */; };
 		1A33B2E71DC830A5000A61FF /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A33B2E61DC830A5000A61FF /* MainTableViewController.swift */; };
 		6E03114A1D0A7D0B008F221A /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0311481D0A7D0B008F221A /* UIViewController+Navigation.swift */; };
-		6E7D4A4A1D0AA4640081491E /* UIViewController+Navigation.swift in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0311481D0A7D0B008F221A /* UIViewController+Navigation.swift */; };
-		6E7D4A4B1D0AA4640081491E /* PilotPlant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0311491D0A7D0B008F221A /* PilotPlant.framework */; };
-		6E7D4A4C1D0AA46C0081491E /* PilotPlant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0311491D0A7D0B008F221A /* PilotPlant.framework */; };
-		6E7D4A4D1D0AA46C0081491E /* PilotPlant.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0311491D0A7D0B008F221A /* PilotPlant.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7C39EF8B1CEC540700F6E738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C39EF8A1CEC540700F6E738 /* AppDelegate.swift */; };
 		7C39EF8D1CEC540800F6E738 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C39EF8C1CEC540800F6E738 /* ViewController.swift */; };
 		7C39EF901CEC540800F6E738 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C39EF8E1CEC540800F6E738 /* Main.storyboard */; };
@@ -40,20 +36,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		7C0A27DE1CEEA1390036E232 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				6E7D4A4D1D0AA46C0081491E /* PilotPlant.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		1A33B2E21DC82597000A61FF /* ExpNowClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpNowClass.swift; sourceTree = "<group>"; };
 		1A33B2E61DC830A5000A61FF /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
@@ -79,9 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E7D4A4A1D0AA4640081491E /* UIViewController+Navigation.swift in Frameworks */,
-				6E7D4A4B1D0AA4640081491E /* PilotPlant.framework in Frameworks */,
-				6E7D4A4C1D0AA46C0081491E /* PilotPlant.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +146,6 @@
 				7C39EF831CEC540700F6E738 /* Sources */,
 				7C39EF841CEC540700F6E738 /* Frameworks */,
 				7C39EF851CEC540700F6E738 /* Resources */,
-				7C0A27DE1CEEA1390036E232 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -226,8 +204,9 @@
 				TargetAttributes = {
 					7C39EF861CEC540700F6E738 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = EWGMUWJ9BK;
 						LastSwiftMigration = 0800;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					7C39EF9A1CEC540800F6E738 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -443,7 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = EWGMUWJ9BK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -452,10 +431,12 @@
 				INFOPLIST_FILE = ExpCatcher/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.snu.itct.ExpCatcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = arm64;
 			};
 			name = Debug;
 		};
@@ -465,7 +446,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = EWGMUWJ9BK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -474,10 +455,12 @@
 				INFOPLIST_FILE = ExpCatcher/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.snu.itct.ExpCatcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = arm64;
 			};
 			name = Release;
 		};

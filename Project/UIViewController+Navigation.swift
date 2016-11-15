@@ -8,11 +8,11 @@
 
 import UIKit
 import ObjectiveC
-import PilotPlant
+//import PilotPlant
 
 private var backButtonHidden : Bool = false
 private var tapKBDismiss : Bool = false
-
+/*
 class PopoverHostScene: CHPopoverHostViewController {
     
 }
@@ -154,7 +154,7 @@ class PagingScene: CHPagingViewController {
         }
     }
 }
-
+*/
 public extension UIViewController {
     
     @IBAction func modalDismiss(_ sender : AnyObject){
