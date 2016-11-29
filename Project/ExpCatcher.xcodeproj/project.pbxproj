@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A33B2E31DC82597000A61FF /* ExpNowClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A33B2E21DC82597000A61FF /* ExpNowClass.swift */; };
 		1A33B2E71DC830A5000A61FF /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A33B2E61DC830A5000A61FF /* MainTableViewController.swift */; };
+		1A9E269F1DED695D0084B2E2 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9E269E1DED695D0084B2E2 /* MainTableViewCell.swift */; };
 		6E03114A1D0A7D0B008F221A /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0311481D0A7D0B008F221A /* UIViewController+Navigation.swift */; };
 		7C39EF8B1CEC540700F6E738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C39EF8A1CEC540700F6E738 /* AppDelegate.swift */; };
 		7C39EF8D1CEC540800F6E738 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C39EF8C1CEC540800F6E738 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		1A33B2E21DC82597000A61FF /* ExpNowClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpNowClass.swift; sourceTree = "<group>"; };
 		1A33B2E61DC830A5000A61FF /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		1A9E269E1DED695D0084B2E2 /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		6E0311481D0A7D0B008F221A /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Navigation.swift"; path = "../UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 		6E0311491D0A7D0B008F221A /* PilotPlant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PilotPlant.framework; path = ../PilotPlant.framework; sourceTree = "<group>"; };
 		7C39EF871CEC540700F6E738 /* ExpCatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpCatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 				6E0311491D0A7D0B008F221A /* PilotPlant.framework */,
 				7C39EF8C1CEC540800F6E738 /* ViewController.swift */,
 				7C39EF8E1CEC540800F6E738 /* Main.storyboard */,
+				1A9E269E1DED695D0084B2E2 /* MainTableViewCell.swift */,
 				7C39EF911CEC540800F6E738 /* Assets.xcassets */,
 				7C39EF931CEC540800F6E738 /* LaunchScreen.storyboard */,
 				7C39EF961CEC540800F6E738 /* Info.plist */,
@@ -276,6 +279,7 @@
 				6E03114A1D0A7D0B008F221A /* UIViewController+Navigation.swift in Sources */,
 				7C39EF8D1CEC540800F6E738 /* ViewController.swift in Sources */,
 				7C39EF8B1CEC540700F6E738 /* AppDelegate.swift in Sources */,
+				1A9E269F1DED695D0084B2E2 /* MainTableViewCell.swift in Sources */,
 				1A33B2E71DC830A5000A61FF /* MainTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

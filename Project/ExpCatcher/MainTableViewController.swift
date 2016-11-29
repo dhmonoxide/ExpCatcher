@@ -10,6 +10,9 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
 
+    //extension
+    
+    //let nav : UINavigationController = UINavigationController(rootViewController: self.storyboard!.instantiateViewControllerWithIdentifier(""))
     
     var expNowList = createDummy()
     override func viewDidLoad() {
@@ -37,17 +40,19 @@ class MainTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
        // return expNowList.count
-        return 3
+        return expNowList.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ExperimentNowCell", for: indexPath)
 
         
         let exp = expNowList[indexPath.row]
-        cell.textLabel!.text = expNowList.expName
-        cell.detailTextLabel?.text = expNowList.expLoc
+        //cell.textLabel.
+        cell.textLabel!.text = exp.expName
+        cell.detailTextLabel?.text = "~" + exp.dueDate
+        
         
         
         
@@ -57,6 +62,9 @@ class MainTableViewController: UITableViewController {
     }
  
 
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "진행 중인 실험"
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
