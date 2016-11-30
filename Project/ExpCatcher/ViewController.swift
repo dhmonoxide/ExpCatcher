@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     // MARK: Properties
-    
+    //@IBOutlet
     
     
     override func viewDidLoad() {

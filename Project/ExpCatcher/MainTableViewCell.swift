@@ -10,6 +10,12 @@ import UIKit
 
 class MainTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var expNowNameLabel: UILabel!
+    @IBOutlet weak var expNowLocLabel: UILabel!
+    @IBOutlet weak var expNowDueLabel: UILabel!
+
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,10 +27,9 @@ class MainTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    @IBOutlet weak var expNowNameLabel: UILabel!
-    @IBOutlet weak var expNowLocLabel: UILabel!
-    @IBOutlet weak var expNowInfoLabel: UILabel!
-    @IBOutlet weak var expNowDueLabel: UILabel!
+    //@IBOutlet weak var expNowLocLabel: UILabel!
+    //@IBOutlet weak var expNowInfoLabel: UILabel!
+    //@IBOutlet weak var expNowDueLabel: UILabel!
     
 
 }
