@@ -2937,23 +2937,23 @@
                         <viewControllerLayoutGuide type="bottom" id="3d9-6O-mGn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SqI-Rx-ikz">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="443"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서울대 실험심리 급합니다ㅠㅠ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FIv-4X-xJw">
-                                <rect key="frame" x="20" y="8" width="318" height="33"/>
+                                <rect key="frame" x="20" y="72" width="318" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서울대학교 사회과학대학 16동 302호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaG-wT-AqI">
-                                <rect key="frame" x="20" y="49" width="253" height="21"/>
+                                <rect key="frame" x="20" y="113" width="253" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~2016년 4월 8일, 17:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJT-gH-4q2">
-                                <rect key="frame" x="20" y="185" width="173" height="21"/>
+                                <rect key="frame" x="20" y="249" width="173" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2983,7 +2983,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxX-hh-ML7">
-                                <rect key="frame" x="20" y="78" width="111" height="30"/>
+                                <rect key="frame" x="20" y="142" width="111" height="30"/>
                                 <state key="normal" title="010-7452-5286"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hQ-HV-eC9">
@@ -2994,11 +2994,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oj-QT-Vso">
-                                <rect key="frame" x="20" y="116" width="161" height="30"/>
+                                <rect key="frame" x="20" y="180" width="161" height="30"/>
                                 <state key="normal" title="dhmonoxide@snu.ac.kr"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘 마감" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2h-SN-emi">
-                                <rect key="frame" x="20" y="154" width="71" height="23"/>
+                                <rect key="frame" x="20" y="218" width="71" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -3899,9 +3899,9 @@
         <image name="스크린샷 2016-06-10 오전 11.22.26" width="959" height="882"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="MbY-rP-bsc"/>
+        <segue reference="Ev5-HB-XL6"/>
         <segue reference="AWv-8w-qBJ"/>
         <segue reference="na6-5f-hqh"/>
-        <segue reference="9hI-1r-MSw"/>
-        <segue reference="MbY-rP-bsc"/>
     </inferredMetricsTieBreakers>
 </document>

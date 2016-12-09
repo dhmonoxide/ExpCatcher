@@ -28,7 +28,7 @@ class MyInterestsViewController: UIViewController {
     
     
     
-    @IBAction func indexChanged(sender:UISegementedControl){
+    @IBAction func indexChanged(sender:UISegmentedControl){
         
         switch segmentedControl.selectedSegmentIndex {
         case 0:
