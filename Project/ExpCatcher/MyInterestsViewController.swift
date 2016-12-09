@@ -1,34 +1,22 @@
 //
-//  ExpInfoViewController.swift
+//  MyInterestsViewController.swift
 //  ExpCatcher
 //
-//  Created by 정보문화학 on 2016. 11. 30..
+//  Created by 정보문화학 on 2016. 12. 6..
 //  Copyright © 2016년 InterfaceProgramming. All rights reserved.
 //
 
 import UIKit
 
-class ExpInfoViewController: UIViewController {
+class MyInterestsViewController: UIViewController {
+    
+    @IBOutlet weak var InterestSegmented: UISegmentedControl!
 
-    var expNowList = createDummy()
-    
-    @IBOutlet weak var expname: UILabel!
-    @IBOutlet weak var exploc: UILabel!
-    @IBOutlet weak var phone: UIButton!
-    @IBOutlet weak var email: UIButton!
-    @IBOutlet weak var expduedate1: UILabel!
-    @IBOutlet weak var expduedate2: UILabel!
-    @IBOutlet weak var expduration: UILabel!
-    @IBOutlet weak var expreward: UILabel!
-    @IBOutlet weak var exprestriction: UILabel!
-    @IBOutlet weak var expdetail: UILabel!
-    @IBOutlet weak var participateIn: UIButton!
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        
         // Do any additional setup after loading the view.
     }
 
@@ -37,18 +25,32 @@ class ExpInfoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func participate (sender: AnyObject){
+    
+    
+    
+    @IBAction func indexChanged(sender:UISegementedControl){
         
-        
+        switch segmentedControl.selectedSegmentIndex {
+        case 0:
+            print "selected 1"
+            break;
+        case 1:
+            print "selected 2"
+            break;
+        case 2:
+            print "selected 3"
+            break;
+        default:
+            break;
+        }
         
         
         
     }
     
     
-    
-    
 
+    
     /*
     // MARK: - Navigation
 

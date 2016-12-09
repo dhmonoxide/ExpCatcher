@@ -1,21 +1,15 @@
 //
-//  MainTableViewController.swift
+//  ExpInfoTableViewController.swift
 //  ExpCatcher
 //
-//  Created by 정보문화학 on 2016. 11. 1..
+//  Created by 정보문화학 on 2016. 12. 6..
 //  Copyright © 2016년 InterfaceProgramming. All rights reserved.
 //
 
 import UIKit
 
-class MainTableViewController: UITableViewController {
+class ExpInfoTableViewController: UITableViewController {
 
-    //@IBOutlet weak var tableView: UITableView!
-    
-    
-    //let nav : UINavigationController = UINavigationController(rootViewController: self.storyboard!.instantiateViewControllerWithIdentifier(""))
-    
-    var expNowList = createDummy()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,9 +18,6 @@ class MainTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 119
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,73 +31,29 @@ class MainTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        // return expNowList.count
-        return expNowList.count
-    }
-    
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ExperimentNowCell", for: indexPath) as! MainTableViewCell
-        
-        
-        let exp = expNowList[indexPath.row]
-        //cell.textLabel.
-        //cell.textLabel!.text = exp.expName
-        //cell.detailTextLabel?.text = "~" + exp.dueDate
-        cell.expNowNameLabel.text = exp.expName
-        cell.expNowLocLabel.text = exp.expLoc
-        cell.expNowDueLabel.text = exp.dueDate
-        //cell.expNowInfoLabel.text = "¥(exp.duration)분 / ¥(exp.reward)원 / ¥(exp.restrict)"
-        
-        
-        
-        // Configure the cell...
-        
-        return cell
-    }
-    
-    
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "진행 중인 실험"
+        return 8
     }
 
     /*
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "toInfoViewSegue"
-        {
-            if segue.destination is ExpInfoViewController{
-                // do whatever you want with the data you want to pass.
-            }
-        }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
+        return cell
     }
     */
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toInfoViewSegue" {
-            guard let destination = segue.destination as? ExpInfoViewController, let selectedIndex = self.tableView.indexPathForSelectedRow?.row else {
-                return
-            }
-            //destination.exp = exp
-        }
-    }
 
-    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
-        
-        cell.
-        
-        
-        
-        
-        
         return true
-    }*/
-    
+    }
+    */
 
     /*
     // Override to support editing the table view.
@@ -146,12 +93,3 @@ class MainTableViewController: UITableViewController {
     */
 
 }
-/*extension MainTableViewController: UITableViewDataSource {
-    
-}
-
-
-
-extension MainTableViewController: UITableViewDelegate {
-    
-}*/
