@@ -1,22 +1,21 @@
 //
-//  ExpInfoTableViewController.swift
+//  AlarmTableViewController.swift
 //  ExpCatcher
 //
-//  Created by 정보문화학 on 2016. 12. 6..
+//  Created by 정보문화학 on 2016. 12. 12..
 //  Copyright © 2016년 InterfaceProgramming. All rights reserved.
 //
 
 import UIKit
 
-class ExpInfoTableViewController: UITableViewController {
+class AlarmTableViewController: UITableViewController {
 
-    
-    @IBOutlet weak var location: UILabel!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let app = UIApplication.shared
+       // let notificationSettings = UIUserNotificationSettings(forTypes: UIUserNotificationType([.alert]))
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -33,12 +32,12 @@ class ExpInfoTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 8
+        return 0
     }
 
     /*

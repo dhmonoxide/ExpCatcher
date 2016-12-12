@@ -12,6 +12,8 @@ class MyInterestsViewController: UIViewController {
     
     @IBOutlet weak var InterestSegmented: UISegmentedControl!
 
+    @IBOutlet weak var switchView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,26 +30,22 @@ class MyInterestsViewController: UIViewController {
     
     
     
-    @IBAction func indexChanged(sender:UISegmentedControl){
-        
-        switch segmentedControl.selectedSegmentIndex {
+    @IBAction func switchView (sender: AnyObject){
+        switch InterestSegmented.selectedSegmentIndex {
         case 0:
-            print "selected 1"
-            break;
+            
+            
+            print ("interestedStudies")
         case 1:
-            print "selected 2"
-            break;
+            print ("interestedUniv")
         case 2:
-            print "selected 3"
-            break;
+            print ("reward")
         default:
-            break;
+            print ("yee")
         }
         
         
-        
     }
-    
     
 
     
